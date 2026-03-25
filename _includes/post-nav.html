@@ -1,0 +1,65 @@
+<!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  {% assign previous = site.data.locales[include.lang].post.button.previous %}
+  {% assign next = site.data.locales[include.lang].post.button.next %}
+
+  {% if page.categories %}
+    {% assign current_category = page.categories[0] %}
+    {% assign current_order = page.order | default: 0 %}
+
+    {% assign prev_post = null %}
+    {% assign next_post = null %}
+
+    {% assign posts_in_category = site.posts
+      | where_exp: 'post', 'post.categories contains current_category'
+      | sort: 'order'
+    %}
+
+    {% for post in posts_in_category %}
+      {% if post.order < current_order %}
+        {% assign prev_post = post %}
+      {% elsif post.order > current_order and next_post == null %}
+        {% assign next_post = post %}
+      {% endif %}
+    {% endfor %}
+
+    <!-- Previous Post (Lower Order) -->
+    {% if prev_post %}
+      <a
+        href="{{ site.baseurl }}{{ prev_post.url }}"
+        class="btn btn-outline-primary"
+        aria-label="{{ previous }}"
+      >
+        <p>{{ prev_post.title }}</p>
+      </a>
+    {% else %}
+      <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
+        <p>-</p>
+      </div>
+    {% endif %}
+
+    <!-- Next Post (Higher Order) -->
+    {% if next_post %}
+      <a
+        href="{{ site.baseurl }}{{ next_post.url }}"
+        class="btn btn-outline-primary"
+        aria-label="{{ next }}"
+      >
+        <p>{{ next_post.title }}</p>
+      </a>
+    {% else %}
+      <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">
+        <p>-</p>
+      </div>
+    {% endif %}
+  {% else %}
+    <!-- Fallback: If no categories, show disabled buttons -->
+    <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
+      <p>-</p>
+    </div>
+    <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">
+      <p>-</p>
+    </div>
+  {% endif %}
+</nav>
