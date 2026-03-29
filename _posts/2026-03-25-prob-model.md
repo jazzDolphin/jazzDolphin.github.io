@@ -44,8 +44,6 @@ $$
 
 이렇게 구한 $\hat{\theta}$처럼 하나의 값으로 파라미터를 추정하는 방식을 point estimate(점 추정)이라고 한다. 
 
-하지만 $\hat{\theta}$은 모든 데이터를 보고 결정한 것이 아니라 일부 만을 보고 결정한 것이므로 이 점 추정치가 얼마나 정확한 결과인지 불확실함을 정량화 할 필요가 있다. 
-통계학에서는 이를 inference라고 한다. 이러한 inference에는 frequentist와 Bayesian 관점이 있다.
 
 ## Reference
 * Murphy, K. P. (2022). [Probabilistic Machine Learning: An Introduction.](https://probml.github.io/pml-book/book1.html) MIT press.
