@@ -1,7 +1,7 @@
 ---
 title: "Principle of Data Reduction 2: Sufficiency Principle"
 date: 2026-05-03 21:29:00 +0900
-categories: [Statistics]
+categories: [Statistical Inference, Foundations]
 order: 5
 math: true
 ---

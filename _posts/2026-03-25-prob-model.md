@@ -1,7 +1,7 @@
 ---
 title: Probabilistic Model
 date: 2026-03-25 23:48:00 +0900
-categories: [Statistics]
+categories: [Statistical Inference, Foundations]
 order: 1
 math: true
 ---

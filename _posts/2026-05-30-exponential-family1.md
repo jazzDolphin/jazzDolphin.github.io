@@ -1,7 +1,7 @@
 ---
 title: "Exponential Family 1: Exponential Family(지수족)의 정의와 예시"
 date: 2026-05-30 17:48:00 +0900
-categories: [Statistics]
+categories: [Statistical Inference, Foundations]
 order: 9
 math: true
 ---

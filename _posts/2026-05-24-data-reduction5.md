@@ -1,7 +1,7 @@
 ---
 title: "Principle of Data Reduction 5: Equivariance Principle"
 date: 2026-05-24 23:55:00 +0900
-categories: [Statistics]
+categories: [Statistical Inference, Foundations]
 order: 8
 math: true
 ---

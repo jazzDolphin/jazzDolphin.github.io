@@ -1,7 +1,7 @@
 ---
 title: "Principle of Data Reduction 1: 통계량과 Data Reduction"
 date: 2026-04-29 17:30:00 +0900
-categories: [Statistics]
+categories: [Statistical Inference, Foundations]
 order: 4
 math: true
 ---

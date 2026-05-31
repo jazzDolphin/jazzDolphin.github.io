@@ -1,7 +1,7 @@
 ---
 title: "Principle of Data Reduction 3: Factorization Theorem"
 date: 2026-05-10 13:49:00 +0900
-categories: [Statistics]
+categories: [Statistical Inference, Foundations]
 order: 6
 math: true
 ---

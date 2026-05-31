@@ -1,7 +1,7 @@
 ---
 title: "Principle of Data Reduction 4: Likelihood Principle"
 date: 2026-05-17 23:55:00 +0900
-categories: [Statistics]
+categories: [Statistical Inference, Foundations]
 order: 7
 math: true
 ---
