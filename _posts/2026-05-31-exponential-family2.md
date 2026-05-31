@@ -182,7 +182,7 @@ $$
 
 즉 $$A(\boldsymbol{\eta})$$의 hessian은 $$T(\boldsymbol{x})$$의 공분산 행렬과 같다.
 
-공분산 행렬은 항상 positive semi-definite이므로, $$A(\boldsymbol{\eta})$$는 convex function이라는 [위에서 보인 사실](https://jazzdolphin.github.io/posts/exponential-family2//posts/exponential-family2/#aboldsymboleta%EB%8A%94-convex-function%EC%9D%B4%EB%8B%A4)과 일치한다.
+공분산 행렬은 항상 positive semi-definite이므로, $$A(\boldsymbol{\eta})$$는 convex function이라는 [위에서 보인 사실](https://jazzdolphin.github.io/posts/exponential-family2/#aboldsymboleta%EB%8A%94-convex-function%EC%9D%B4%EB%8B%A4)과 일치한다.
 
 계산할 때 $$\int$$와 $$\nabla$$의 순서를 바꿨는데, 지수족 분포는 $$\Omega$$ 내부에서는 Leibniz integral rule이 적용되어 교환이 보장된다.
 
