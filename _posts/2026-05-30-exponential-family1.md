@@ -63,9 +63,9 @@ Exponential family에 속하는 분포의 예시로는 Bernoulli, Binomial, Pois
 
 $$
 \begin{align*}
-    p(x \mid \phi) &= \phi^x (1-\phi)^{1-x} \\
-    &= \exp(x \log \phi + (1-x) \log(1-\phi)) \\
-    &= \exp\left(\log \left( \frac{\phi}{1-\phi}\right) x + \log(1-\phi) \right)
+    p(x \mid \mu) &= \mu^x (1-\mu)^{1-x} \\
+    &= \exp(x \log \mu + (1-x) \log(1-\mu)) \\
+    &= \exp\left(\log \left( \frac{\mu}{1-\mu}\right) x + \log(1-\mu) \right)
 \end{align*}\\
 $$
 
@@ -73,19 +73,19 @@ $$
 
 $$
 \begin{align*}
-    \eta &= \log \left( \frac{\phi}{1-\phi} \right) \\
+    \eta &= \log \left( \frac{\mu}{1-\mu} \right) \\
     T(x) &= x \\
-    A(\eta) &= -\log(1-\phi) = \log(1+e^\eta) \\
+    A(\eta) &= -\log(1-\mu) = \log(1+e^\eta) \\
     h(x) &= 1
 \end{align*}
 $$
 
 인 exponential family form으로 표현 가능하기에, 베르누이 분포는 지수족에 속한다.
 
-그리고 $$\phi$$를 $$\eta$$로 표현하면 
+그리고 $$\mu$$를 $$\eta$$로 표현하면 
 
 $$
-\phi = f^{-1}(\eta) = \frac{1}{1 + e^{-\eta}} = \sigma(\eta)
+\mu = f^{-1}(\eta) = \frac{1}{1 + e^{-\eta}} = \sigma(\eta)
 $$
 
 시그모이드 함수가 나온다.
